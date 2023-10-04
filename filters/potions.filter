@@ -1,0 +1,25 @@
+//Health & Mana Potions
+ItemDisplay[rvl]: %PURPLE%R %WHITE%Full
+ItemDisplay[rvs]: %PURPLE%r %WHITE%35%{%PURPLE%r %WHITE%35%, Perf %YELLOW%O%WHITE%, %BLUE%Ring %WHITE%= Light Res %BLUE%Ring%NL%%WHITE%3x%PURPLE%r %WHITE%35% = %PURPLE%R %WHITE%Full%NL%%TAN%Note%WHITE%: Crafting Recipes:}
+ItemDisplay[(hp1 OR hp2 OR hp3 OR hp4 OR hp5 OR mp1 OR mp2 OR mp3 OR mp4 OR mp5) (CLVL<80 OR DIFF<2)]: %NAME%{%WHITE%3x%RED%!%WHITE%hp, 3x%BLUE%!%WHITE%mp, Square Gem = %PURPLE%R %WHITE%Full%NL%3x%RED%!%WHITE%hp, 3x%BLUE%!%WHITE%mp, Chip. Gem = %PURPLE%r %WHITE%35%%NL%%TAN% Note%WHITE%: Crafting Recipes:}%CONTINUE%
+ItemDisplay[hp5]: %RED%!%WHITE%Hp{%NAME%}%CONTINUE%
+ItemDisplay[mp5]: %BLUE%!%WHITE%Mp{%NAME%}%CONTINUE%
+ItemDisplay[hp1]: %RED%!%WHITE%minor hp{%NAME%}%CONTINUE%
+ItemDisplay[hp2]: %RED%!%WHITE%light hp{%NAME%}%CONTINUE%
+ItemDisplay[hp3]: %RED%!%WHITE%healing{%NAME%}%CONTINUE%
+ItemDisplay[hp4]: %RED%!%WHITE%great hp{%NAME%}%CONTINUE%
+ItemDisplay[mp1]: %BLUE%!%WHITE%minor mp{%NAME%}%CONTINUE%
+ItemDisplay[mp2]: %BLUE%!%WHITE%light mp{%NAME%}%CONTINUE%
+ItemDisplay[mp3]: %BLUE%!%WHITE%mana{%NAME%}%CONTINUE%
+ItemDisplay[mp4]: %BLUE%!%WHITE%great mp{%NAME%}%CONTINUE%
+ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) FILTLVL>0 (DIFF>0 OR FILTLVL>4)]: {%NAME%}
+ItemDisplay[(hp4 OR mp4) FILTLVL>0 (DIFF>1 OR FILTLVL>4)]: {%NAME%}
+ItemDisplay[(hp5 OR mp5) DIFF>1 FILTLVL>4]: {%NAME%}
+
+//Choking, Exploding, Fulminating, Oil, Rancid, Strangling, and New PD2 Throwing Potions
+ItemDisplay[opm OR tpfm]: %NAME%{%WHITE%Exoplo. Potion, Perf %RED%O%WHITE%, %BLUE%Ring %WHITE%= Fire Res %BLUE%Ring%NL%%TAN%Note%WHITE%: Crafting Recipe:}%CONTINUE%
+ItemDisplay[(opm OR tpfm) FILTLVL>0 (CLVL>79 OR FILTLVL>3)]: {%NAME%}
+ItemDisplay[(gpm OR opl OR ops OR gps OR gpl) FILTLVL>0 (CLVL>23 OR FILTLVL>3)]: {%NAME%}
+ItemDisplay[(tpfs OR tpgs OR tpcs OR tpls) FILTLVL>0 (CLVL>17 OR FILTLVL>3)]: {%NAME%}
+ItemDisplay[(tpfm OR tpgm OR tpcm OR tplm) FILTLVL>0 (CLVL>23 OR FILTLVL>3)]: {%NAME%}
+ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>3)]: {%NAME%}

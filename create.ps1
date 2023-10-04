@@ -4,23 +4,23 @@ $TRUE_EXPR = "FILTLVL>=0"
 $FALSE_EXPR = "FILTLVL<0"
 
 $filters = @(
-    "header",
-    "gold",
-    "remove-superior-and-inferior-from-name",
-    "utilities/utilities",
-    "runes-and-gems",
-    "charms",
-    "potions",
-    "colors-and-renames",
-    "bases/possible-runewords",
-    "bases/armor",
-    "bases/weapon",
-    "bases/high-def-or-ed-bases",
-    "item-notes/upgrading",
-    "item-notes/max-sockets",
-    "item-notes/show-skills-on-nmag",
-    "shop-hunting",
-    "overrides", # slap anything to fully nuke here
+    "header"
+    "gold"
+    "colors-and-renames"
+    "remove-superior-and-inferior-from-name"
+    "utilities/utilities"
+    "runes-and-gems"
+    "charms"
+    "potions"
+    "bases/possible-runewords"
+    "bases/armor"
+    "bases/weapon"
+    "bases/high-def-or-ed-bases"
+    "item-notes/upgrading"
+    "item-notes/max-sockets"
+    "item-notes/show-skills-on-nmag"
+    "shop-hunting"
+    "overrides" # slap anything to fully nuke here
     "quivers"
     "original"
 )

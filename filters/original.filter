@@ -131,31 +131,6 @@ ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl
 ItemDisplay[(lwb OR 8lw OR 6lw) MAG !ID (AMAZON OR FILTLVL<4)]: %NAME%
 
 
-//Fixing coloring for vendors
-ItemDisplay[UNI OR RW]: %NAME%%GOLD%{%NAME%}%CONTINUE%
-ItemDisplay[SET]: %NAME%%GREEN%{%NAME%}%CONTINUE%
-ItemDisplay[RARE]: %NAME%%YELLOW%{%NAME%}%CONTINUE%
-ItemDisplay[MAG]: %NAME%%BLUE%{%NAME%}%CONTINUE%
-ItemDisplay[(ARMOR OR WEAPON) NMAG !ETH (SOCK=0 OR THROWING) !opm]: %NAME%%WHITE%{%NAME%}%CONTINUE%
-ItemDisplay[(ARMOR OR WEAPON) NMAG !RW (SOCK>0 OR ETH)]: %NAME%%GRAY%{%NAME%}%CONTINUE%
-ItemDisplay[CRAFT]: %NAME%%ORANGE%{%NAME%}%CONTINUE%
-
-//Jewel notes
-ItemDisplay[jew STAT477=21 ]: %NAME%{%TAN%Note%WHITE%: White %BLUE%Jewel}
-ItemDisplay[jew STAT477=4 ]: %NAME%{%TAN%Note%WHITE%: %GRAY%Black %BLUE%Jewel}
-ItemDisplay[jew ID]: %NAME%{%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to Destroy Into: %BLUE%Jewel Fragments}
-ItemDisplay[jewf ID]: %BLUE%%NAME%{%GRAY%(Stackable Jewel)%NL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
-
-//Show me every identified item
-ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
-
-
-//WELCOME NEW CHARACTER MESSAGE
-ItemDisplay[(ARMOR OR WEAPON) INF ILVL=1 PRICE=1]: %NAME%{%NAME%%NL%%NL%%TAN%                               ~Kryszard%NL%%RED%Good Luck & Have Fun!%NL%%GRAY%Stop reading bulls**t messages and Keep On Playing!%NL%Just Google for it. Link for %ORANGE%Donations %GRAY%inside. Okay, and now:%NL%Gaming Experience Better! To read more about it Visit my GitHub:%NL%Thank You for choosing my Loot Filter. I hope it gonna make your%NL%%TAN%Welcome to the %RED%Project Diablo 2!%NL%}
-
-//Always show me those items
-ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED]: %NAME%{%NAME%}
-
 //It’s just different sizes. BORDER > MAP > DOT > PX.
 //%TIER-X% - just minimap pin w/o chat notify when tier is higher
 //BELOW: Minimap Pin + Notify for TIER1, Just Pin for TIER2, Hide for Tier3+

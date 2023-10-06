@@ -1,5 +1,5 @@
 //Arrows & Bolts
 ItemDisplay[(aqv OR cqv) NMAG (CLVL>6 OR FILTLVL>3)]:
-ItemDisplay[(aqv OR cqv) MAG ((FILTLVL>0 AND CLVL>79) OR FILTLVL>3)]:
+ItemDisplay[(aqv OR cqv) MAG ((FILTLVL>1 AND CLVL>79) OR FILTLVL>3)]:
 ItemDisplay[(aqv OR cqv) RARE AMAZON !ID FILTLVL<5]: %NAME%%CONTINUE%
 ItemDisplay[(aqv OR cqv) RARE AMAZON !ID]: %DOT-A8%%TIER-4%%NAME%%CONTINUE%

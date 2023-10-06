@@ -1,0 +1,2 @@
+//Show me that item is ethereal
+ItemDisplay[ETH]: %GRAY%[%WHITE%eth%GRAY%] %NAME%%CONTINUE%

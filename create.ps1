@@ -6,27 +6,54 @@ $FALSE_EXPR = "FILTLVL<0"
 $filters = @(
     "header"
     "gold"
-    "colors-and-renames"
-    "remove-superior-and-inferior-from-name"
-    "utilities/utilities"
-    "runes-and-gems"
+    # renames on RW base items
+    "renames/utilities"
+    "renames/runes-and-gems"
+    "renames/remove-superior-and-inferior-from-name"
+    "renames/add-sockets"
+    "renames/add-corrupted"
+    "renames/add-sup-or-inf"
+    "renames/add-eth"
+    "renames/add-pricetags"
+    "renames/add-staffmods"
+    "renames/add-quantities"
+    "renames/rename-uniques-and-sets"
     "charms"
     "potions"
     "bases/possible-runewords"
+    "bases/high-def-or-ed-bases"
     "bases/armor"
     "bases/weapon"
-    "bases/high-def-or-ed-bases"
     "item-notes/upgrading"
     "item-notes/max-sockets"
     "item-notes/show-skills-on-nmag"
+    "item-notes/notes-runes-and-gems"
     "shop-hunting"
-    "overrides" # slap anything to fully nuke here
+    # # slap anything to fully nuke here
+    # # "overrides/eth-normal"
+    # # "overrides/eth-socket"
+    # # "overrides/socket"
+    # # "overrides/magic"
+    # # "overrides/rare"
+    # # "overrides/unique"
+    # # "overrides/runeword"
     "quivers"
     "original"
+    "rarity-filters/eth"
+    "rarity-filters/normal"
+    "rarity-filters/magic"
+    "rarity-filters/rare"
+    "rarity-filters/set"
+    "rarity-filters/unique"
+    "rarity-filters/craft"
+    "rarity-filters/others"
+    "footer"
 )
 
 $variables = @{
-    ENABLE_OVERRIDES = $false
+    ENABLE_OVERRIDES = $true
+    REMOVE_UNFILTERED_INFERIOR_BASES = $true
+    DEBUG = $true
 }
 
 New-Item -ItemType Directory -Force -Path out

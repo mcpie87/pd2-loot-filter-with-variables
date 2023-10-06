@@ -4,14 +4,19 @@
 //
 //	For Casual and EndGame Players
 
-//Define Filter Strict Levels
+//-----------------------------------------------------------------------------------
+// FILTER CONFIG
+//-----------------------------------------------------------------------------------
+// Filter Levels (0 = No Filter)
 ItemDisplayFilterName[]: Hide Just Trash Items
-ItemDisplayFilterName[]: Item Filter - More Notify
+ItemDisplayFilterName[]: Hide Trash + Useless Magic/Bases
 ItemDisplayFilterName[]: Item Filter - Recommended
 ItemDisplayFilterName[]: Strict Filter
 ItemDisplayFilterName[]: Max-Strictness Filter
 
-//Show info about current Filter Level in description of Horadric Cube
+//-----------------------------------------------------------------------------------
+// SHOW VERSION AND LEVEL DETAILS ON CUBE
+//-----------------------------------------------------------------------------------
 ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%Filter ver 8.0.3}%CONTINUE%
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%0 - %TAN%Show All Items%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%1 - %TAN%Hide Just Trash Items%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
@@ -19,3 +24,6 @@ ItemDisplay[box FILTLVL=2]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Setting
 ItemDisplay[box FILTLVL=3]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%3 - %TAN%Item Filter - Recommended%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=4]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%4 - %ORANGE%Strict Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=5]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%5 - %RED%Max-Strictness Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
+
+//Show me names of items in gambling screen
+ItemDisplay[(WEAPON OR ARMOR) NMAG !ID]: %NAME%

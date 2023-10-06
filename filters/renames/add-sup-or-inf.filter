@@ -1,0 +1,14 @@
+//Let's keep orginal coloring for items
+ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
+ItemDisplay[SET]: %GREEN%%NAME%%CONTINUE%
+ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) NMAG !ETH SOCK=0]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) NMAG (SOCK>0 OR ETH)]: %GRAY%%NAME%%CONTINUE%
+ItemDisplay[CRAFT]: %ORANGE%%NAME%%CONTINUE%
+
+//"Sup" for superiors, and "Inf" for inferiors
+ItemDisplay[SUP ED<5]: %WHITE%Sup %NAME%%CONTINUE%
+ItemDisplay[WEAPON SUP ED>4]: %RED%Sup %NAME%%CONTINUE%
+ItemDisplay[ARMOR SUP ED>4]: %BLUE%Sup %NAME%%CONTINUE%
+ItemDisplay[INF !(rin OR amu) ID]: %GRAY%Inf %NAME%%CONTINUE%

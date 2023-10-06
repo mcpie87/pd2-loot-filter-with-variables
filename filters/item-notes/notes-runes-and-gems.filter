@@ -1,39 +1,3 @@
-//Gems
-//hiding low ones
-ItemDisplay[GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:
-ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:
-//amethysts
-ItemDisplay[GEMTYPE=1 GEM<4 !(gzv OR gpv)]: %NAME% %ORANGE%[%PURPLE%*%ORANGE%]
-ItemDisplay[GEMTYPE=1 GEM>3]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%
-//diamonds
-ItemDisplay[GEMTYPE=2 GEM<4 !(glw OR gpw)]: %NAME% %ORANGE%[%WHITE%*%ORANGE%]
-ItemDisplay[GEMTYPE=2 GEM>3]: %NAME% %ORANGE%[%WHITE%O%ORANGE%]%CONTINUE%
-//emeralds
-ItemDisplay[GEMTYPE=3 GEM<4 !(glg OR gpg)]: %NAME% %ORANGE%[%GREEN%*%ORANGE%]
-ItemDisplay[GEMTYPE=3 GEM>3]: %NAME% %ORANGE%[%GREEN%O%ORANGE%]%CONTINUE%
-//rubys
-ItemDisplay[GEMTYPE=4 GEM<4 !(glr OR gpr)]: %NAME% %ORANGE%[%RED%*%ORANGE%]
-ItemDisplay[GEMTYPE=4 GEM>3]: %NAME% %ORANGE%[%RED%O%ORANGE%]%CONTINUE%
-//sapphires
-ItemDisplay[GEMTYPE=5 GEM<4 !(glb OR gpb)]: %NAME% %ORANGE%[%BLUE%*%ORANGE%]
-ItemDisplay[GEMTYPE=5 GEM>3]: %NAME% %ORANGE%[%BLUE%O%ORANGE%]%CONTINUE%
-//topazes
-ItemDisplay[GEMTYPE=6 GEM<4 !(gly OR gpy)]: %NAME% %ORANGE%[%YELLOW%*%ORANGE%]
-ItemDisplay[GEMTYPE=6 GEM>3]: %NAME% %ORANGE%[%YELLOW%O%ORANGE%]%CONTINUE%
-//skulls
-ItemDisplay[GEMTYPE=7 GEM<4 !(skl OR skz)]: %NAME% %ORANGE%[%GRAY%*%ORANGE%]
-ItemDisplay[GEMTYPE=7 GEM>3]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]%CONTINUE%
-//ping for flawlesses
-ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) (CLVL>1 FILTLVL<4)]: %DOT-70%%NAME%%CONTINUE%
-
-//Runes
-ItemDisplay[(RUNE<18) (CLVL>1 AND (CLVL<80 OR FILTLVL<5))]: %PX-62% %ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
-ItemDisplay[(RUNE<18) (CLVL=1 OR (CLVL>79 FILTLVL>3))]: %ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<5]: %PX-62% %TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%TAN%  *%CONTINUE%
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>4]: %TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%TAN%  *%CONTINUE%
-ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%RED%*     %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]%RED%     *%CONTINUE%
-ItemDisplay[RUNE>25]: %BORDER-62%%GREEN%*%PURPLE%*%RED%*          %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%          *%PURPLE%*%GREEN%*%CONTINUE%
-
 //Runes Notes
 ItemDisplay[RUNE>0]: %NAME%{%TAN%Note%WHITE%: Check Settings to Find Hotkey for %GRAY%(un)%WHITE%stacking%NL%}%CONTINUE%
 

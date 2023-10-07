@@ -1,19 +1,15 @@
+//Always show me those items
+ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED]: %NAME%{%NAME%}
+
+//Show me every identified item
+ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
 
 
-// Hide unfiltered inferior/cracked items
-ItemDisplay[REMOVE_UNFILTERED_INFERIOR_BASES (ARMOR OR WEAPON) INF FILTLVL>1]: {%NAME%}
-// for lvling purposes
-ItemDisplay[!DEBUG (ARMOR OR WEAPON) !leg !opm ((CLVL>30 FILTLVL>0) OR FILTLVL>3)]: {%NAME%}
+
 
 
 // ItemDisplay[]: %CONTINUE%%NAME%{%NAME%} // might be useless?
-// ItemDisplay[DEBUG ETH]: %CONTINUE%%NAME%{UNFILTERED! ETH UNFILTERED! %NAME%}
-// ItemDisplay[DEBUG NMAG]: %CONTINUE%%NAME%{UNFILTERED! NMAG UNFILTERED! %NAME%}
-// ItemDisplay[DEBUG MAG]: %CONTINUE%%NAME%{UNFILTERED! MAG UNFILTERED! %NAME%}
-// ItemDisplay[DEBUG RARE]: %CONTINUE%%NAME%{UNFILTERED! RARE UNFILTERED! %NAME%}
-// ItemDisplay[DEBUG CRAFT]: %CONTINUE%%NAME%{UNFILTERED! CRAFT UNFILTERED! %NAME%}
-// ItemDisplay[DEBUG SET]: %CONTINUE%%NAME%{UNFILTERED! SET UNFILTERED! %NAME%}
-// ItemDisplay[DEBUG UNI]: %CONTINUE%%NAME%{UNFILTERED! UNIQUE UNFILTERED! %NAME%}
+
 
 ItemDisplay[(ARMOR OR WEAPON) (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !leg FILTLVL>0]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%NAME%}
 
@@ -21,11 +17,19 @@ ItemDisplay[(ARMOR OR WEAPON) (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR M
 // ItemDisplay[(ARMOR OR WEAPON) INF FILTLVL>0]: {%NAME%}
 // ItemDisplay[(ARMOR OR WEAPON) !leg !opm ((CLVL>30 FILTLVL>0) OR FILTLVL>3)]: {%NAME%}
 
-//Always show me those items
-ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED]: %NAME%{%NAME%}
+// Hide unfiltered inferior/cracked items
+ItemDisplay[(REMOVE_UNFILTERED_INFERIOR_BASES OR FILTLVL>1) (ARMOR OR WEAPON) INF]: {%NAME%}
+// for lvling purposes
+// ItemDisplay[!DEBUG (ARMOR OR WEAPON) !leg !opm ((CLVL>30 FILTLVL>1) OR FILTLVL>3)]: {%NAME%}
 
-//Show me every identified item
-ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
+ItemDisplay[DEBUG ETH]: %CONTINUE%%NAME%{UNFILTERED! ETH UNFILTERED! %NAME%}
+ItemDisplay[DEBUG NMAG]: %CONTINUE%%NAME%{UNFILTERED! NMAG UNFILTERED! %NAME%}
+ItemDisplay[DEBUG MAG]: %CONTINUE%%NAME%{UNFILTERED! MAG UNFILTERED! %NAME%}
+ItemDisplay[DEBUG RARE]: %CONTINUE%%NAME%{UNFILTERED! RARE UNFILTERED! %NAME%}
+ItemDisplay[DEBUG CRAFT]: %CONTINUE%%NAME%{UNFILTERED! CRAFT UNFILTERED! %NAME%}
+ItemDisplay[DEBUG SET]: %CONTINUE%%NAME%{UNFILTERED! SET UNFILTERED! %NAME%}
+ItemDisplay[DEBUG UNI]: %CONTINUE%%NAME%{UNFILTERED! UNIQUE UNFILTERED! %NAME%}
+// ItemDisplay[DEBUG]: UNFILTERED! %NAME%{%NAME%}
 
-//WELCOME NEW CHARACTER MESSAGE
-ItemDisplay[(ARMOR OR WEAPON) INF ILVL=1 PRICE=1]: %NAME%{%NAME%%NL%%NL%%TAN%                               ~Kryszard%NL%%RED%Good Luck & Have Fun!%NL%%GRAY%Stop reading bulls**t messages and Keep On Playing!%NL%Just Google for it. Link for %ORANGE%Donations %GRAY%inside. Okay, and now:%NL%Gaming Experience Better! To read more about it Visit my GitHub:%NL%Thank You for choosing my Loot Filter. I hope it gonna make your%NL%%TAN%Welcome to the %RED%Project Diablo 2!%NL%}
+// //WELCOME NEW CHARACTER MESSAGE
+// ItemDisplay[(ARMOR OR WEAPON) INF ILVL=1 PRICE=1]: %NAME%{%NAME%%NL%%NL%%TAN%                               ~Kryszard%NL%%RED%Good Luck & Have Fun!%NL%%GRAY%Stop reading bulls**t messages and Keep On Playing!%NL%Just Google for it. Link for %ORANGE%Donations %GRAY%inside. Okay, and now:%NL%Gaming Experience Better! To read more about it Visit my GitHub:%NL%Thank You for choosing my Loot Filter. I hope it gonna make your%NL%%TAN%Welcome to the %RED%Project Diablo 2!%NL%}

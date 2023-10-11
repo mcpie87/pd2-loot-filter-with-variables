@@ -1,11 +1,21 @@
+//Jewel notes
+ItemDisplay[jew STAT477=21 ]: %NAME%{%TAN%Note%WHITE%: White %BLUE%Jewel}
+ItemDisplay[jew STAT477=4 ]: %NAME%{%TAN%Note%WHITE%: %GRAY%Black %BLUE%Jewel}
+ItemDisplay[jew ID]: %NAME%{%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to Destroy Into: %BLUE%Jewel Fragments}
+ItemDisplay[jewf ID]: %BLUE%%NAME%{%GRAY%(Stackable Jewel)%NL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
+
+//Highlight Good Magic items
+ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%BLUE%
+
+
 // //
 // // Remove any item that annoys you
 // // Simply remove the comment from the line
 // //
 
 // // Jewelery
-// ItemDisplay[ENABLE_OVERRIDES FILTLVL>1 CLVL>30 MAG amu]: //Amulet%CONTINUE%
-// ItemDisplay[ENABLE_OVERRIDES FILTLVL>1 CLVL>30 MAG rin]: //Ring%CONTINUE%
+ItemDisplay[!SHOW_MAGIC_AMULETS FILTLVL>0 CLVL>30 MAG amu]: //Amulet%CONTINUE%
+ItemDisplay[!SHOW_MAGIC_RINGS FILTLVL>0 CLVL>30 MAG rin]: //Ring%CONTINUE%
 // ItemDisplay[ENABLE_OVERRIDES FILTLVL>1 CLVL>30 MAG jew]: //Jew%CONTINUE%
 
 // // Helmets

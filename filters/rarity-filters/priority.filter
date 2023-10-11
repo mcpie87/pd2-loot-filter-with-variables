@@ -1,0 +1,5 @@
+//Show me every identified item
+ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
+
+//Always show me those items
+ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED]: %NAME%{%NAME%}

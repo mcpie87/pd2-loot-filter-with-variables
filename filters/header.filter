@@ -9,7 +9,7 @@
 //-----------------------------------------------------------------------------------
 // Filter Levels (0 = No Filter)
 ItemDisplayFilterName[]: Hide Just Trash Items
-ItemDisplayFilterName[]: Hide Trash + Useless Magic/Bases
+ItemDisplayFilterName[]: Hide Trash + Unwanted Bases/Magic/Rare
 ItemDisplayFilterName[]: Item Filter - Recommended
 ItemDisplayFilterName[]: Strict Filter
 ItemDisplayFilterName[]: Max-Strictness Filter
@@ -24,6 +24,10 @@ ItemDisplay[box FILTLVL=2]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Setting
 ItemDisplay[box FILTLVL=3]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%3 - %TAN%Item Filter - Recommended%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=4]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%4 - %ORANGE%Strict Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=5]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%5 - %RED%Max-Strictness Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
+
+
+//WELCOME NEW CHARACTER MESSAGE
+ItemDisplay[(ARMOR OR WEAPON) INF ILVL=1 PRICE=1]: %NAME%{%NAME%%NL%%NL%%TAN%                               ~Kryszard%NL%%RED%Good Luck & Have Fun!%NL%%GRAY%Stop reading bulls**t messages and Keep On Playing!%NL%Just Google for it. Link for %ORANGE%Donations %GRAY%inside. Okay, and now:%NL%Gaming Experience Better! To read more about it Visit my GitHub:%NL%Thank You for choosing my Loot Filter. I hope it gonna make your%NL%%TAN%Welcome to the %RED%Project Diablo 2!%NL%}
 
 //Show me names of items in gambling screen
 ItemDisplay[(WEAPON OR ARMOR) NMAG !ID]: %NAME%

@@ -1,0 +1,44 @@
+//PD2 DCLONE/DUNGEON/RATHMA BOSSES UNIQUES
+ItemDisplay[(uhl OR uth OR utb OR 7bs OR 7qr) UNI !ID]: %BORDER-68%%GREEN%HOLY %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%MOLY
+ItemDisplay[(rar OR rbe OR ram) UNI !ID]: %BORDER-68%%GREEN%HOLY %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%MOLY
+
+//NEW PD2 UNIQUES
+//GG PD2 UNIQUES
+ItemDisplay[(7tw OR baf OR 7qs OR 6bs OR utg) UNI !ID]: %BORDER-68%%ORANGE%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %ORANGE%up
+//GG PD2 UNIQUES only when ETH
+ItemDisplay[(utp OR 7st OR 7cm OR 7fb) UNI ETH !ID]: %BORDER-68%%ORANGE%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %ORANGE%up
+//OK PD2 UNIQUES only when ETH
+ItemDisplay[(am5) UNI ETH !ID]: %DOT-68%%GREEN%*%DARK_GREEN%*%GRAY%*     %NAME%%GRAY%     *%DARK_GREEN%*%GREEN%*
+//OK PD2 UNIQUES
+ItemDisplay[(drf OR utp OR 7st OR 7cm OR 7fb OR ned OR ame) UNI !ID]: %DOT-68%%GREEN%*%DARK_GREEN%*%GRAY%*     %NAME%%GRAY%     *%DARK_GREEN%*%GREEN%*
+//Leveling/Lower Value PD2 UNIQUES
+ItemDisplay[(ba6 OR 9ar OR dr2 OR ob6 OR am5 OR ne6 OR ulb) UNI !ID]: %DOT-68%%TAN%*%GRAY%*   %NAME%%GRAY%   *%TAN%*
+ItemDisplay[pa3 UNI !ID]: %DOT-68%%GRAY%*  %NAME%%GRAY%  *
+
+//GG UNIQUES
+ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up
+
+//GG UNIQUES only when ETH
+ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7) UNI ETH !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up
+
+//OK UNIQUES only when ETH
+ItemDisplay[(7pa OR 7bt OR 7gi OR 7wa OR 7m7 OR 8ls OR 7gl OR 7b8 OR 7bk OR xpl OR 7ha OR 7b7) UNI ETH !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+
+//OK UNIQUES
+//belts
+ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR uvc) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+//armors
+ItemDisplay[(xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+//gloves
+ItemDisplay[(uvg OR uhg OR umg) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+//helmets
+ItemDisplay[(xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+//boots
+ItemDisplay[(lbt OR xhb OR uhb OR tbt OR xvb) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+//shields
+ItemDisplay[(nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+//weapons
+ItemDisplay[(7ts OR 7s8 OR 9bw OR 7wc OR 7bw OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh OR 7p7) UNI !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*     %NAME%%GRAY%     *%TAN%*%YELLOW%*
+
+//Rainbow Facet
+ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w

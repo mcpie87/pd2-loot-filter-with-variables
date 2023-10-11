@@ -1,2 +1,2 @@
 //Show me quantitiy of all stackables
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%} //%CONTINUE%

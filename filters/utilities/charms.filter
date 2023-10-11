@@ -1,5 +1,6 @@
 //All Charms
-ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*
+ItemDisplay[(cm1 OR cm2 OR cm3) MAG ID ILVL>90]: %NAME% L%ILVL%%CONTINUE%
+ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME% L%ILVL%   %PURPLE%*
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-68%%NAME%
 
 //Good Charms part.1

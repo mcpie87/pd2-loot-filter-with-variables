@@ -1,0 +1,3 @@
+// Show ETH throwing bases for possible crafts
+ItemDisplay[(jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR tax OR 9ta OR 7ta) NMAG ETH ILVL>71 STAT360=0]: %DOT-A8%%PX-68%%TIER-2%%NAME%{%WHITE%Next: You Can %ORANGE%Craft %WHITE%With This Base%NL%%TAN%Note%WHITE%: You can %RED%Corrupt %WHITE%to Imbue into %YELLOW%Rare %GRAY%(%WHITE%50% Chance%GRAY%)}
+ItemDisplay[(jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR tax OR 9ta OR 7ta) NMAG ETH ILVL>71 STAT360>0]: {%TAN%Note%WHITE%: Unlucky... Maybe Next Time :)}

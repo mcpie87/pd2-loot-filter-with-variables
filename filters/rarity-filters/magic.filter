@@ -14,8 +14,8 @@ ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%BLUE%
 // //
 
 // // Jewelery
-ItemDisplay[!SHOW_MAGIC_AMULETS FILTLVL>0 CLVL>30 MAG amu]: //Amulet%CONTINUE%
-ItemDisplay[!SHOW_MAGIC_RINGS FILTLVL>0 CLVL>30 MAG rin]: //Ring%CONTINUE%
+ItemDisplay[!SHOW_MAGIC_AMULETS FILTLVL>1 CLVL>30 MAG amu]: //Amulet%CONTINUE%
+ItemDisplay[!SHOW_MAGIC_RINGS FILTLVL>1 CLVL>30 MAG rin]: //Ring%CONTINUE%
 // ItemDisplay[ENABLE_OVERRIDES FILTLVL>1 CLVL>30 MAG jew]: //Jew%CONTINUE%
 
 // // Helmets

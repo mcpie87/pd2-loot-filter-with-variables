@@ -1,0 +1,7 @@
+// Filter out normal bows if FILTLVL>1
+ItemDisplay[BOW NMAG !RW TABSK0>0 (CLVL<41 FILTLVL<4)]: %NAME%{%NAME%}
+ItemDisplay[BOW NMAG !RW TABSK0>2 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+
+// Filter out normal amazon javelins if FILTLVL>1
+ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>0 (CLVL<41 FILTLVL<4)]: %NAME%{%NAME%}
+ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>2 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}

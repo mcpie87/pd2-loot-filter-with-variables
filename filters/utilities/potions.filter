@@ -16,6 +16,9 @@ ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) FILTLVL>0 (DIFF>0 OR FILTLV
 ItemDisplay[(hp4 OR mp4) FILTLVL>0 (DIFF>1 OR FILTLVL>4)]: {%NAME%}
 ItemDisplay[(hp5 OR mp5) DIFF>1 FILTLVL>4]: {%NAME%}
 
+// Name unfiltered
+ItemDisplay[(rvl OR rvs OR hp1 OR hp2 OR hp3 OR hp4 OR hp5 OR mp1 OR mp2 OR mp3 OR mp4 OR mp5)]: %NAME%
+
 //Choking, Exploding, Fulminating, Oil, Rancid, Strangling, and New PD2 Throwing Potions
 ItemDisplay[opm OR tpfm]: %NAME%{%WHITE%Exoplo. Potion, Perf %RED%O%WHITE%, %BLUE%Ring %WHITE%= Fire Res %BLUE%Ring%NL%%TAN%Note%WHITE%: Crafting Recipe:}%CONTINUE%
 ItemDisplay[(opm OR tpfm) FILTLVL>0 (CLVL>79 OR FILTLVL>3)]: {%NAME%}

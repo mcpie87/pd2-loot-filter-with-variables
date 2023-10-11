@@ -4,6 +4,7 @@ ItemDisplay[isc]: %RED%* %GRAY%id %WHITE%scroll%CONTINUE%
 ItemDisplay[vps]: %GREEN%!%WHITE%stamina{%GRAY%(time stack)%NL%%WHITE%Gives infinite stamina for 30s%NL%%TAN%Note%WHITE%: Instantly restores stamina}%CONTINUE%
 ItemDisplay[wms]: %GREEN%!%WHITE%thaw{%GREEN%!%WHITE%thaw, Perf %BLUE%O%WHITE%, %BLUE%Ring %WHITE%= Cold Res %BLUE%Ring%NL%%GRAY%(time stack)%NL%%WHITE%Gives +25 Cold Res for 30s%NL%%TAN%Note%WHITE%: Instantly thaws character}%CONTINUE%
 ItemDisplay[(tsc OR isc OR vps OR wms) FILTLVL>0 (CLVL>30 OR FILTLVL>3)]: {%NAME%}
+ItemDisplay[!SHOW_ANTIDOTES yps]:
 ItemDisplay[yps]: %GREEN%!%WHITE%ant{%GREEN%!%WHITE%ant, Perf %GREEN%O%WHITE%, %BLUE%Ring %WHITE%= Psn Res %BLUE%Ring%NL%%GRAY%(time stack)%NL%%WHITE%Gives +25 Psn Res for 30s%NL%%TAN%Note%WHITE%: Instantly cures poison}
 ItemDisplay[FILTLVL>0 key]:
 ItemDisplay[key QTY>19]: %GRAY%key{%TAN%Note%WHITE%: RuneWords Recipes Avaliable at Quantity<20%NL%%NL%%WHITE%at Bottom Edge of your Screen%NL%Notice the %GRAY%"%WHITE%Settings%GRAY%" %WHITE%button located%NL%%NL%%ORANGE%Crafting %WHITE%Bases from Vendors%NL%%TAN%Pro-Tip%WHITE%: You can buy many}%CONTINUE%

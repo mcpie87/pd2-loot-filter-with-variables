@@ -1,0 +1,35 @@
+
+//Show me every identified item
+ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
+
+//WELCOME NEW CHARACTER MESSAGE
+ItemDisplay[(ARMOR OR WEAPON) INF ILVL=1 PRICE=1]: %NAME%{%NAME%%NL%%NL%%TAN%                               ~Kryszard%NL%%RED%Good Luck & Have Fun!%NL%%GRAY%Stop reading bulls**t messages and Keep On Playing!%NL%Just Google for it. Link for %ORANGE%Donations %GRAY%inside. Okay, and now:%NL%Gaming Experience Better! To read more about it Visit my GitHub:%NL%Thank You for choosing my Loot Filter. I hope it gonna make your%NL%%TAN%Welcome to the %RED%Project Diablo 2!%NL%}
+
+//Always show me those items
+ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED]: %NAME%{%NAME%}
+
+//HIDE EVERYTHING ELSE
+ItemDisplay[(tkf OR tax OR bkf) ((NMAG AND !INF) OR ((MAG OR RARE) !ETH !ID)) CLVL<13 FILTLVL<4]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%){%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE) !ID (FILTLVL<2 OR (CLVL<41 FILTLVL<4))]: %NAME%
+ItemDisplay[(ARMOR OR WEAPON) (EXC OR ELT) (MAG OR RARE) !ID (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%
+ItemDisplay[(CHEST OR HELM OR SHIELD) NORM RARE !ID (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%
+ItemDisplay[((CHEST OR HELM OR SHIELD) OR (WEAPON AND !THROWING)) (EXC OR ELT) NMAG !ETH !INF !SOCK=1 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[(WEAPON AND !THROWING) (EXC OR ELT) NMAG ETH !INF !SOCK=1 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[(CIRC OR HELM) NORM NMAG !ETH !INF SOCK=3 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[CHEST NORM NMAG !ETH !INF SOCK=4 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[((POLEARM OR SPEAR) AND !THROWING) NMAG ETH !INF (SOCK=0 OR SOCK=3 OR SOCK=4) (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[BOW NMAG !RW TABSK0>0 (CLVL<41 FILTLVL<4)]: %NAME%{%NAME%}
+ItemDisplay[BOW NMAG !RW TABSK0>2 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>0 (CLVL<41 FILTLVL<4)]: %NAME%{%NAME%}
+ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>2 (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%{%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) !INF (CLVL<31 FILTLVL<4)]: %NAME%{%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !(THROWING OR GLOVES OR BELT OR BOOTS OR SOCK=1 OR leg) FILTLVL>0]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !leg FILTLVL>0]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) INF FILTLVL>0]: {%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) !leg !opm ((CLVL>30 FILTLVL>0) OR FILTLVL>3)]: {%NAME%}
+
+//It’s just different sizes. BORDER > MAP > DOT > PX.
+//%TIER-X% - just minimap pin w/o chat notify when tier is higher
+//BELOW: Minimap Pin + Notify for TIER1, Just Pin for TIER2, Hide for Tier3+
+//ItemDisplay[(ARMOR OR WEAPON) FILTLVL<3]: %MAP-0A%%PX-62%%TIER-1%%NAME%
+//ItemDisplay[(ARMOR OR WEAPON) FILTLVL>2]: %NAME%

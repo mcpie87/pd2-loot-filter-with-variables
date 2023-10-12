@@ -21,8 +21,8 @@ $filters = @(
     "renames/add-sup-or-inf"
     "renames/add-eth"
     "renames/rename-uniques-and-sets"
-    "renames/utilities"
     "renames/add-quantities"
+    "renames/utilities"
     "bases/possible-runewords"
     "bases/high-def-or-ed-bases"
     "bases/armor"
@@ -107,6 +107,10 @@ $variables = @{
     SHOW_RARE_ITEMS = @{
         SHOW_RARE_CHESTS = $false
         SHOW_RARE_SHIELDS = $false
+    }
+    SHOW_BASES_BOWS = @{
+        SHOW_NMAG_BOWS_0_SOCK_0_ED = $false
+        SHOW_NMAG_BOWS_GTE_3_SOCK_0_ED = $true
     }
 }
 
